@@ -1,0 +1,51 @@
+<div class="wrapper">
+
+  <!------- Header Section ------->
+  <div>
+    <app-header></app-header>
+  </div>
+
+  <!-- Main section -->
+  <div class="container" style="margin-top: 70px;">
+    <div class="text-center">
+      <h1>{{title}}</h1>
+      <p class="lead">
+        Welcome to our all-in-one application! Here, you can explore various stores offering a wide range of products and services including books, house rentals, restaurant information, and quizzes for kids. Enjoy your browsing experience!
+      </p>
+    </div>
+    <div class="card-deck">
+      <div class="card shadow-lg p-2" style="width: 18rem;">
+        <img class="card-img-top" src="../assets/Book_Default.png" alt="Book Image">
+        <div class="card-body">
+          <h4 class="card-title">{{property.name}}</h4>
+          <p class="card-text">{{property.description}}</p>
+        </div>
+      </div>
+      <div class="card shadow-lg" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card shadow-lg" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Footer section -->
+  <app-footer></app-footer>
+
+</div>

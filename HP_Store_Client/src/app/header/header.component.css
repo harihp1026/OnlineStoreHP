@@ -1,0 +1,9 @@
+#navbar {
+    transition: top 0.3s;
+}
+
+/* Adjust this value based on the height of your navbar */
+.main-content {
+    padding-top: 100px;
+    /* Assuming the navbar height is 60px */
+}
